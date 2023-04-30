@@ -7,11 +7,8 @@ import DiaryList from "./../components/DiaryList";
 
 const Home = () => {
   const diaryList = useContext(DiaryStateContext);
-
   const [data, setData] = useState([]);
-
   const [curDate, setCurDate] = useState(new Date());
-  console.log(curDate);
 
   // const headText = "";
   const headText = `${curDate.getFullYear()}년 ${curDate.getMonth() + 1}월`;
